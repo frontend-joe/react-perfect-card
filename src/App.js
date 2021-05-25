@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Card from "./ThePerfectCard";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ width: "500px", margin: "0 auto" }}>
+      <Card
+        isFlex
+        flexDirection="column"
+        alignItems="center"
+        justifyContent="center"
+        padding="2rem"
+        margin="0 0 2rem"
+        background="linear-gradient(to right, #D763CD, #8F44FD)"
+        border="1px solid white"
+      >
+        Card Content
+      </Card>
     </div>
   );
 }
